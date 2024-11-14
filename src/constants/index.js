@@ -242,57 +242,21 @@ export default destinations;
 
 export const features = [
   {
-    icon: "https://example.com/icons/search.svg", // Replace with actual icon links
+    icon: "/UniqueDestinations.jpg", // Replace with actual icon links
     title: "Discover Hidden Gems",
     description:
       "Explore unique destinations with personalized recommendations. Our platform finds the best-kept secrets to make your travel experience truly unforgettable.",
   },
   {
-    icon: "https://example.com/icons/pricing.svg",
+    icon: "/CompetetiveBooking.jpg",
     title: "Competitive Pricing",
     description:
       "Get the best deals on flights, accommodations, and activities. We partner with top vendors to ensure you get maximum value without compromising quality.",
   },
   {
-    icon: "https://example.com/icons/easy-booking.svg",
+    icon: "seemlessBooking-removebg-preview.png",
     title: "Seamless Booking",
     description:
       "Booking your next adventure has never been easier. Our user-friendly interface and streamlined checkout process make planning your trip a breeze.",
-  },
-  {
-    icon: "https://example.com/icons/customized.svg",
-    title: "Customized Itineraries",
-    description:
-      "Create an itinerary tailored to your preferences. Whether you’re looking for adventure, relaxation, or cultural immersion, our platform curates a trip just for you.",
-  },
-  {
-    icon: "https://example.com/icons/support.svg",
-    title: "24/7 Support",
-    description:
-      "Our support team is available around the clock to assist with any inquiries or issues, so you can travel worry-free.",
-  },
-  {
-    icon: "https://example.com/icons/reviews.svg",
-    title: "Verified Reviews",
-    description:
-      "Make informed decisions with trusted reviews from real travelers. Get insights and tips from those who have experienced it firsthand.",
-  },
-  {
-    icon: "https://example.com/icons/recommendations.svg",
-    title: "Smart Recommendations",
-    description:
-      "Powered by AI, our smart recommendations help you find places and activities that match your travel style and interests.",
-  },
-  {
-    icon: "https://example.com/icons/sustainability.svg",
-    title: "Eco-Friendly Options",
-    description:
-      "Choose from sustainable travel options that reduce your carbon footprint and support local communities.",
-  },
-  {
-    icon: "https://example.com/icons/rewards.svg",
-    title: "Loyalty Rewards",
-    description:
-      "Earn rewards on every booking and redeem them on future trips, making travel more affordable with every adventure.",
-  },
+},
 ];
