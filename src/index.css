@@ -33,3 +33,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.bg-style {
+  background-image: url("/mn.jpg");
+}

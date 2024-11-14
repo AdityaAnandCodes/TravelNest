@@ -25,7 +25,7 @@ const Navbar = () => {
       }`}
     >
       {/* Left Section: Logo and Destinations Link */}
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-6 hover:text-gray-200">
         <div
           className="text-white text-3xl font-semibold cursor-pointer"
           onClick={() => navigate("/")}
@@ -33,7 +33,7 @@ const Navbar = () => {
           TravelNest
         </div>
         <div
-          className="hidden md:block text-white text-lg cursor-pointer"
+          className="hidden md:block text-white text-lg cursor-pointer hover:text-gray-200"
           onClick={() => navigate("/destinations")}
         >
           Destinations
@@ -42,7 +42,7 @@ const Navbar = () => {
 
       {/* Right Section */}
       <div
-        className="hidden md:block text-white text-lg cursor-pointer"
+        className="hidden md:block text-white text-lg cursor-pointer hover:text-gray-200"
         onClick={() => navigate("/authentication")}
       >
         Sign In
@@ -62,7 +62,7 @@ const Navbar = () => {
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-black bg-opacity-90 flex flex-col items-center gap-6 p-5 md:hidden">
           <div
-            className="text-white text-lg cursor-pointer"
+            className="text-white text-lg cursor-pointer hover:text-gray-200"
             onClick={() => {
               setMenuOpen(false);
               navigate("/destinations");
@@ -70,14 +70,9 @@ const Navbar = () => {
           >
             Destinations
           </div>
+          
           <div
-            className="text-white text-lg cursor-pointer"
-            onClick={() => setMenuOpen(false)}
-          >
-            Things to do
-          </div>
-          <div
-            className="text-white text-lg cursor-pointer"
+            className="text-white text-lg cursor-pointer hover:text-gray-200"
             onClick={() => {
               setMenuOpen(false);
               navigate("/authentication");
