@@ -147,6 +147,7 @@ export const testimonials = [
 
 const destinations = [
   {
+    id: "1", // Unique ID for each destination
     image: "/destinations/taj_mahal.jpg",
     name: "Taj Mahal",
     price: "$15",
@@ -156,6 +157,7 @@ const destinations = [
     temperature: "25°C",
   },
   {
+    id: "2", // Unique ID for each destination
     image: "/destinations/kerala_backwaters.jpg",
     name: "Kerala Backwaters",
     price: "$100",
@@ -165,6 +167,7 @@ const destinations = [
     temperature: "28°C",
   },
   {
+    id: "3", // Unique ID for each destination
     image: "/destinations/goa.jpg",
     name: "Goa Beaches",
     price: "$50",
@@ -174,6 +177,7 @@ const destinations = [
     temperature: "30°C",
   },
   {
+    id: "4", // Unique ID for each destination
     image: "/destinations/jaipur.jpg",
     name: "Jaipur City Palace",
     price: "$10",
@@ -183,6 +187,7 @@ const destinations = [
     temperature: "32°C",
   },
   {
+    id: "5", // Unique ID for each destination
     image: "/destinations/himalayas.jpg",
     name: "Himalayas",
     price: "$300",
@@ -192,6 +197,7 @@ const destinations = [
     temperature: "15°C",
   },
   {
+    id: "6", // Unique ID for each destination
     image: "/destinations/delhi_markets.jpg",
     name: "Delhi Markets",
     price: "$20",
@@ -201,6 +207,7 @@ const destinations = [
     temperature: "29°C",
   },
   {
+    id: "7", // Unique ID for each destination
     image: "/destinations/mysore_palace.jpg",
     name: "Mysore Palace",
     price: "$5",
@@ -210,6 +217,7 @@ const destinations = [
     temperature: "27°C",
   },
   {
+    id: "8", // Unique ID for each destination
     image: "/destinations/rishikesh.jpg",
     name: "Rishikesh",
     price: "$60",
@@ -219,6 +227,7 @@ const destinations = [
     temperature: "22°C",
   },
   {
+    id: "9", // Unique ID for each destination
     image: "/destinations/mumbai.jpg",
     name: "Mumbai Nightlife",
     price: "$80",
@@ -228,6 +237,7 @@ const destinations = [
     temperature: "28°C",
   },
   {
+    id: "10", // Unique ID for each destination
     image: "/destinations/kolkata.jpg",
     name: "Kolkata Bazaars",
     price: "$15",
@@ -258,5 +268,5 @@ export const features = [
     title: "Seamless Booking",
     description:
       "Booking your next adventure has never been easier. Our user-friendly interface and streamlined checkout process make planning your trip a breeze.",
-},
+  },
 ];
