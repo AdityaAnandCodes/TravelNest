@@ -5,8 +5,8 @@ import Testimonials from "../components/Testimonial";
 
 const Home = () => {
   return (
-    <section className="w-full min-h-screen bg-neutral-100">
-            
+    <section className="w-full min-h-screen bg-neutral-100 overflow-hidden">
+
       <Hero />
       <Testimonials />
       <Features />
