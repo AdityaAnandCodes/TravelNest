@@ -11,7 +11,7 @@ const DestinationDetail = () => {
   }
 
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className=" min-h-screen">
       {/* Parallax Background Image Section */}
       <div
         className="relative bg-fixed bg-cover bg-center h-screen" // Adjusted height for the background section
@@ -19,7 +19,7 @@ const DestinationDetail = () => {
       >
         {/* Text Overlay */}
         <div className="flex justify-center items-end w-full h-full bg-black bg-opacity-50">
-          <div className="text-center text-white p-12" style={{ backgroundImage: `/public/` }}>
+          <div className="text-center text-white p-12 " >
             <h1 className="text-5xl font-extrabold">{destination.name}</h1>
             <p className="text-2xl mt-4">{destination.category}</p>
           </div>
@@ -28,10 +28,8 @@ const DestinationDetail = () => {
 
       {/* Detailed Info Section with Background Image Behind */}
       <div
-        className="p-8 md:p-16"
-        style={{
-          backgroundImage: "url('/mandala_bg.jpg')", // Corrected background image path (assuming it's in the public folder)
-        }}
+        className="p-8 md:p-16 bg-style"
+  
       >
         <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-8 relative z-10">
           <h2 className="text-3xl font-semibold text-gray-800 mb-6">Details</h2>
