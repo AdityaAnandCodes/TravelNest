@@ -1,3 +1,4 @@
+import CallToAction from "../components/CTA";
 import Features from "../components/Features";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <Testimonials />
       <Features />
+      <CallToAction />
       <Footer />
     </section>
   );
