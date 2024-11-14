@@ -9,7 +9,7 @@ const Hero = () => {
         <p className="text-lg lg:text-xl">
           From serene beaches to bustling cities, find the perfect destination and start planning your dream vacation today.
         </p>
-        <button className="px-8 py-3 bg-yellow-500 rounded-lg hover:bg-yellow-600 transition">
+        <button className="px-8 py-3 bg-rose-500 rounded-lg hover:bg-rose-600 transition">
           Explore Destinations
         </button>
       </div>
