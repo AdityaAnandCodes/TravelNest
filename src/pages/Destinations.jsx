@@ -119,8 +119,8 @@ const Destinations = () => {
       </div>
 
       {/* Search, Sort, and Filter Section */}
-      <div className="p-8">
-        <div className="flex flex-col sm:flex-row justify-between mb-6">
+      <div className="p-8 pb-0">
+        <div className="flex flex-col sm:flex-row justify-between ">
           {/* Search Input */}
           <input
             type="text"
@@ -150,7 +150,7 @@ const Destinations = () => {
       {/* Destination Cards Section */}
       <div
         id="destinations"
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8 p-8"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6  p-8"
       >
         {sortedDestinations.map((destination, index) => (
           <Link
