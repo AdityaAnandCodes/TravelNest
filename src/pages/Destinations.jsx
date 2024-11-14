@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 
-=======
 import React from "react";
->>>>>>> 916883156bee3ec7c61c6898421d82a5f764ddef
 import { Link } from "react-router-dom";
 import DestinationCard from "../components/DestinationCard";
 import destinations from "../constants/index";
