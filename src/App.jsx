@@ -3,6 +3,7 @@ import Destinations from "./pages/Destinations";
 import DestinationDetails from "./pages/DestinationDetails"; // Import DestinationDetails
 import Navbar from "../src/components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Authentication from "./pages/Authentication";
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/destinations" element={<Destinations />}></Route>
-          <Route path="/destinations/:id" element={<DestinationDetails />}></Route> {/* Add dynamic route */}
+          <Route path="/destinations/:id" element={<DestinationDetails />}></Route>
+          <Route path="/authentication" element={<Authentication />}></Route>
         </Routes>
       </Router>
     </main>
