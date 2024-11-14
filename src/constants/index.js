@@ -145,11 +145,9 @@ export const testimonials = [
   },
 ];
 
-
-
 const destinations = [
   {
-    image: "https://example.com/destinations/taj-mahal.jpg",
+    image: "/destinations/taj_mahal.jpg",
     name: "Taj Mahal",
     price: "$15",
     description:
@@ -158,7 +156,7 @@ const destinations = [
     temperature: "25°C",
   },
   {
-    image: "https://example.com/destinations/kerala-backwaters.jpg",
+    image: "/destinations/kerala_backwaters.jpg",
     name: "Kerala Backwaters",
     price: "$100",
     description:
@@ -167,7 +165,7 @@ const destinations = [
     temperature: "28°C",
   },
   {
-    image: "https://example.com/destinations/goa-beach.jpg",
+    image: "/destinations/goa.jpg",
     name: "Goa Beaches",
     price: "$50",
     description:
@@ -176,7 +174,7 @@ const destinations = [
     temperature: "30°C",
   },
   {
-    image: "https://example.com/destinations/jaipur-palace.jpg",
+    image: "/destinations/jaipur.jpg",
     name: "Jaipur City Palace",
     price: "$10",
     description:
@@ -185,7 +183,7 @@ const destinations = [
     temperature: "32°C",
   },
   {
-    image: "https://example.com/destinations/himalayas.jpg",
+    image: "/destinations/himalayas.jpg",
     name: "Himalayas",
     price: "$300",
     description:
@@ -194,7 +192,7 @@ const destinations = [
     temperature: "15°C",
   },
   {
-    image: "https://example.com/destinations/delhi-markets.jpg",
+    image: "/destinations/delhi_markets.jpg",
     name: "Delhi Markets",
     price: "$20",
     description:
@@ -203,7 +201,7 @@ const destinations = [
     temperature: "29°C",
   },
   {
-    image: "https://example.com/destinations/mysore-palace.jpg",
+    image: "/destinations/mysore_palace.jpg",
     name: "Mysore Palace",
     price: "$5",
     description:
@@ -212,7 +210,7 @@ const destinations = [
     temperature: "27°C",
   },
   {
-    image: "https://example.com/destinations/rishikesh.jpg",
+    image: "/destinations/rishikesh.jpg",
     name: "Rishikesh",
     price: "$60",
     description:
@@ -221,7 +219,7 @@ const destinations = [
     temperature: "22°C",
   },
   {
-    image: "https://example.com/destinations/mumbai-nightlife.jpg",
+    image: "/destinations/mumbai.jpg",
     name: "Mumbai Nightlife",
     price: "$80",
     description:
@@ -230,7 +228,7 @@ const destinations = [
     temperature: "28°C",
   },
   {
-    image: "https://example.com/destinations/kolkata-bazaars.jpg",
+    image: "/destinations/kolkata.jpg",
     name: "Kolkata Bazaars",
     price: "$15",
     description:
