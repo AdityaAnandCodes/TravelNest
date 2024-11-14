@@ -1,26 +1,25 @@
 const Navbar = () => {
   return (
-    <section className="flex justify-between items-center min-w-full">
-      <div className="flex justify-between items-center p-5 gap-6">
-        <div className="montserrat-medium text-rose-600 text-3xl cursor-pointer">
+    <nav className="absolute top-0 left-0 w-full z-20 flex justify-between items-center   p-5">
+      <div className="flex items-center gap-6">
+        <div className="montserrat-medium text-white text-3xl cursor-pointer">
           TravelNest
         </div>
-        <div className="flex justify-between  gap-3">
-          <div className="montserrat-medium text-rose-600 text-lg cursor-pointer ">
+        <div className="flex gap-3">
+          <div className="montserrat-medium text-white text-lg cursor-pointer">
             Destinations
           </div>
-          <div className="montserrat-medium text-rose-600 text-lg cursor-pointer ">
+          <div className="montserrat-medium text-white text-lg cursor-pointer">
             Things to do
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center p-5 gap-6">
-        <div className="montserrat-medium text-rose-600 text-lg cursor-pointer ">
-          {" "}
+      <div className="flex items-center gap-6">
+        <div className="montserrat-medium text-white text-lg cursor-pointer">
           Sign In
         </div>
       </div>
-    </section>
+    </nav>
   );
 };
 
