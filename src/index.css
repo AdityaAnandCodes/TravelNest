@@ -5,6 +5,13 @@
 * {
   font-family: "Montserrat", serif;
 }
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
 
 .poppins-medium {
   font-family: "Poppins", sans-serif;
