@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <section className="min-h-screen w-full"></section>
   )
 }
 
