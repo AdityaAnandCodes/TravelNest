@@ -4,7 +4,7 @@ const DestinationCard = ({ image, name, category, price, temperature }) => {
       <img
         src={image}
         alt={`${name}`}
-        className="w-full h-full object-cover rounded-lg mb-2"
+        className="w-full h-64 object-cover rounded-lg mb-2"
       />
       <p className="text-xs font-medium text-gray-600">{category}</p>
       <h3 className="text-lg font-semibold text-gray-900">{name}</h3>

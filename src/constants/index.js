@@ -319,5 +319,5 @@ export const features = [
     title: "Seamless Booking",
     description:
       "Booking your next adventure has never been easier. Our user-friendly interface and streamlined checkout process make planning your trip a breeze.",
-},
+  },
 ];

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+import React from "react";
+>>>>>>> 916883156bee3ec7c61c6898421d82a5f764ddef
 import { Link } from "react-router-dom";
 import DestinationCard from "../components/DestinationCard";
 import destinations from "../constants/index";
@@ -71,6 +75,7 @@ const Destinations = () => {
       >
         {destinations.map((destination, index) => (
           <Link
+<<<<<<< HEAD
   to={`/destinations/${destination.id}`} // Corrected line
   key={index}
   className="relative cursor-pointer"
@@ -84,6 +89,20 @@ const Destinations = () => {
   />
 </Link>
 
+=======
+            to={`/destinations/${destination.id}`} // Corrected this line
+            key={index}
+            className="relative cursor-pointer"
+          >
+            <DestinationCard
+              image={destination.image}
+              name={destination.name}
+              category={destination.category}
+              price={destination.price}
+              temperature={destination.temperature}
+            />
+          </Link>
+>>>>>>> 916883156bee3ec7c61c6898421d82a5f764ddef
         ))}
       </div>
     </div>
