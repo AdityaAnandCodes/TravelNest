@@ -9,15 +9,13 @@ const Destinations = () => {
         <img
           src="/bg_destinations.jpg"
           alt="Destinations Background"
-          className="min-w-full  object-cover"
+          className="min-w-full max-h-screen object-cover"
         />
-        {/* Overlay Text */}
         <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-bold">
           Explore Destinations
         </h1>
       </div>
 
-      {/* Destination Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8 p-8">
         {destinations.map((destination, index) => (
           <DestinationCard
