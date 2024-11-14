@@ -1,6 +1,6 @@
 const App = () => {
   return (
-    <div>App</div>
+    <main className="w-full min-h-screen"></main>
   )
 }
 
