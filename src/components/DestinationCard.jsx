@@ -1,6 +1,6 @@
 const DestinationCard = ({ image, name, category, price, temperature }) => {
   return (
-    <div className="h-auto bg-white rounded-xl shadow-md p-4 flex flex-col items-start hover:scale-105">
+    <div className="h-auto bg-white rounded-xl shadow-md p-4 flex flex-col items-start hover:scale-105 transition-all duration-500">
       <img
         src={image}
         alt={`${name}`}
