@@ -1,10 +1,63 @@
-
-import React from "react";
+import React, { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import DestinationCard from "../components/DestinationCard";
-import destinations from "../constants/index";
+import destinationsData from "../constants/index";
 
 const Destinations = () => {
+  // State for managing search input, sort, and filter selections
+  const [searchQuery, setSearchQuery] = useState("");
+  const [sortOption, setSortOption] = useState("name");
+  const [filterCategory, setFilterCategory] = useState("");
+
+  // Function to handle search filter
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  // Function to handle category filter
+  const handleFilterChange = (event) => {
+    setFilterCategory(event.target.value);
+  };
+
+  // Function to handle sorting
+  const handleSort = (option, destinations) => {
+    let sortedDestinations = [...destinations];
+
+    switch (option) {
+      case "temperature":
+        sortedDestinations.sort((a, b) => a.temperature - b.temperature);
+        break;
+      case "price-low-high":
+        sortedDestinations.sort((a, b) => a.price - b.price);
+        break;
+      case "price-high-low":
+        sortedDestinations.sort((a, b) => b.price - a.price);
+        break;
+      case "name":
+        sortedDestinations.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      default:
+        break;
+    }
+
+    return sortedDestinations;
+  };
+
+  // Filter destinations based on search and category filters
+  const filteredDestinations = useMemo(() => {
+    return destinationsData.filter((destination) => {
+      return (
+        destination.name.toLowerCase().includes(searchQuery.toLowerCase()) &&
+        (filterCategory ? destination.category === filterCategory : true)
+      );
+    });
+  }, [searchQuery, filterCategory]);
+
+  // Sort the filtered destinations based on selected sort option
+  const sortedDestinations = useMemo(() => {
+    return handleSort(sortOption, filteredDestinations);
+  }, [sortOption, filteredDestinations]);
+
   return (
     <div className="bg-gray-100 min-h-screen">
       {/* Parallax Section */}
@@ -65,15 +118,43 @@ const Destinations = () => {
         </div>
       </div>
 
+      {/* Search, Sort, and Filter Section */}
+      <div className="p-8">
+        <div className="flex flex-col sm:flex-row justify-between mb-6">
+          {/* Search Input */}
+          <input
+            type="text"
+            placeholder="Search destinations"
+            value={searchQuery}
+            onChange={handleSearchChange}
+            className="px-4 py-2 border border-gray-300 rounded-lg w-full sm:w-1/3 mb-4 sm:mb-0"
+          />
+
+          {/* Filter Category */}
+          <select
+            value={filterCategory}
+            onChange={handleFilterChange}
+            className="px-4 py-2 border border-gray-300 rounded-lg w-full sm:w-1/3 mb-4 sm:mb-0"
+          >
+            <option value="">All Categories</option>
+            <option value="Nature">Nature</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Culture & History">Culture & History</option>
+            <option value="Shopping">Shopping</option>
+          </select>
+
+          {/* Sort By */}
+        </div>
+      </div>
+
       {/* Destination Cards Section */}
       <div
         id="destinations"
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8 p-8"
       >
-        {destinations.map((destination, index) => (
+        {sortedDestinations.map((destination, index) => (
           <Link
-
-            to={`/destinations/${destination.id}`} // Corrected this line
+            to={`/destinations/${destination.id}`} // Corrected the link structure
             key={index}
             className="relative cursor-pointer"
           >
