@@ -147,94 +147,155 @@ export const testimonials = [
 
 const destinations = [
   {
+    id: "1", // Unique ID for each destination
     image: "/destinations/taj_mahal.jpg",
     name: "Taj Mahal",
     price: "$15",
     description:
-      "An iconic symbol of love and a UNESCO World Heritage Site in Agra.",
+      "An iconic symbol of love and a UNESCO World Heritage Site in Agra. The Taj Mahal is a stunning white marble mausoleum built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal. It’s one of the Seven Wonders of the World.",
     category: "Culture & History",
     temperature: "25°C",
+    bestTimeToVisit: "October to March",
+    activities: ["Guided tours", "Photography", "Boat ride on Yamuna River"],
+    nearbyAttractions: ["Agra Fort", "Mehtab Bagh", "Fatehpur Sikri"],
   },
   {
+    id: "2", // Unique ID for each destination
     image: "/destinations/kerala_backwaters.jpg",
     name: "Kerala Backwaters",
     price: "$100",
     description:
-      "A serene network of lagoons, rivers, and lakes along the Arabian Sea coast.",
+      "A serene network of lagoons, rivers, and lakes along the Arabian Sea coast. Kerala’s backwaters offer a tranquil escape through traditional houseboats, providing a glimpse into the local way of life and beautiful landscapes.",
     category: "Nature",
     temperature: "28°C",
+    bestTimeToVisit: "November to February",
+    activities: ["Houseboat cruise", "Bird watching", "Ayurvedic treatments"],
+    nearbyAttractions: ["Alleppey", "Kumarakom", "Vembanad Lake"],
   },
   {
+    id: "3", // Unique ID for each destination
     image: "/destinations/goa.jpg",
     name: "Goa Beaches",
     price: "$50",
     description:
-      "Famous beaches in Goa for relaxation, water sports, and nightlife.",
+      "Famous beaches in Goa for relaxation, water sports, and nightlife. Goa’s coastline is dotted with palm-fringed beaches offering everything from sunbathing to water sports, plus a vibrant nightlife scene with beach parties and bars.",
     category: "Entertainment",
     temperature: "30°C",
+    bestTimeToVisit: "November to March",
+    activities: ["Beach parties", "Water sports", "Nightclub hopping"],
+    nearbyAttractions: [
+      "Basilica of Bom Jesus",
+      "Fort Aguada",
+      "Dudhsagar Falls",
+    ],
   },
   {
+    id: "4", // Unique ID for each destination
     image: "/destinations/jaipur.jpg",
     name: "Jaipur City Palace",
     price: "$10",
     description:
-      "A historic palace in the Pink City of Jaipur, showcasing Rajasthani architecture.",
+      "A historic palace in the Pink City of Jaipur, showcasing Rajasthani architecture. The City Palace is a magnificent blend of Mughal and Rajput architecture, with stunning courtyards, museums, and opulent royal apartments.",
     category: "Culture & History",
     temperature: "32°C",
+    bestTimeToVisit: "October to March",
+    activities: ["Palace tours", "Cultural performances", "Photography"],
+    nearbyAttractions: ["Amber Fort", "Hawa Mahal", "Jantar Mantar"],
   },
   {
+    id: "5", // Unique ID for each destination
     image: "/destinations/himalayas.jpg",
     name: "Himalayas",
     price: "$300",
     description:
-      "A stunning mountain range offering trekking and scenic beauty.",
+      "A stunning mountain range offering trekking and scenic beauty. The Himalayas stretch across five countries and provide breathtaking views, challenging treks, and opportunities for mountaineering, as well as spiritual journeys.",
     category: "Nature",
     temperature: "15°C",
+    bestTimeToVisit: "March to June, September to November",
+    activities: [
+      "Trekking",
+      "Mountain climbing",
+      "Paragliding",
+      "Spiritual retreats",
+    ],
+    nearbyAttractions: ["Leh-Ladakh", "Nainital", "Spiti Valley"],
   },
   {
+    id: "6", // Unique ID for each destination
     image: "/destinations/delhi_markets.jpg",
     name: "Delhi Markets",
     price: "$20",
     description:
-      "A bustling hub of traditional and modern shopping experiences in Delhi.",
+      "A bustling hub of traditional and modern shopping experiences in Delhi. Markets like Chandni Chowk, Dilli Haat, and Connaught Place offer everything from street food and textiles to jewelry and crafts, providing an authentic shopping experience.",
     category: "Shopping",
     temperature: "29°C",
+    bestTimeToVisit: "October to March",
+    activities: ["Shopping", "Street food tours", "Cultural experiences"],
+    nearbyAttractions: ["Qutub Minar", "India Gate", "Red Fort"],
   },
   {
+    id: "7", // Unique ID for each destination
     image: "/destinations/mysore_palace.jpg",
     name: "Mysore Palace",
     price: "$5",
     description:
-      "A grand palace known for its architectural beauty and rich history.",
+      "A grand palace known for its architectural beauty and rich history. Mysore Palace is one of India’s most famous royal residences, showcasing Indo-Saracenic architecture, intricate woodwork, and historical artifacts.",
     category: "Culture & History",
     temperature: "27°C",
+    bestTimeToVisit: "October to March",
+    activities: ["Palace tours", "Cultural performances", "Photography"],
+    nearbyAttractions: [
+      "Chamundeshwari Temple",
+      "Brindavan Gardens",
+      "Mysore Zoo",
+    ],
   },
   {
+    id: "8", // Unique ID for each destination
     image: "/destinations/rishikesh.jpg",
     name: "Rishikesh",
     price: "$60",
     description:
-      'The "Yoga Capital of the World" with scenic landscapes and river rafting.',
+      'The "Yoga Capital of the World" with scenic landscapes and river rafting. Known for its spiritual significance, Rishikesh attracts visitors seeking peace, yoga retreats, and adventure activities like white-water rafting.',
     category: "Nature",
     temperature: "22°C",
+    bestTimeToVisit: "September to April",
+    activities: ["Yoga", "River rafting", "Trekking", "Spiritual retreats"],
+    nearbyAttractions: [
+      "Haridwar",
+      "Rajaji National Park",
+      "Neelkanth Mahadev Temple",
+    ],
   },
   {
+    id: "9", // Unique ID for each destination
     image: "/destinations/mumbai.jpg",
     name: "Mumbai Nightlife",
     price: "$80",
     description:
-      "A vibrant nightlife scene with clubs, restaurants, and entertainment.",
+      "A vibrant nightlife scene with clubs, restaurants, and entertainment. Mumbai is famous for its bustling nightlife with iconic clubs, restaurants, and bars, making it one of India’s best destinations for night owls.",
     category: "Entertainment",
     temperature: "28°C",
+    bestTimeToVisit: "November to February",
+    activities: ["Nightclub hopping", "Live music", "Street food tours"],
+    nearbyAttractions: ["Gateway of India", "Marine Drive", "Elephanta Caves"],
   },
   {
+    id: "10", // Unique ID for each destination
     image: "/destinations/kolkata.jpg",
     name: "Kolkata Bazaars",
     price: "$15",
     description:
-      "Traditional markets known for handicrafts, textiles, and sweets.",
+      "Traditional markets known for handicrafts, textiles, and sweets. Kolkata’s bazaars like New Market and Gariahat are famous for their vibrant atmosphere and a wide range of goods, including Bengali handicrafts and sweets.",
     category: "Shopping",
     temperature: "30°C",
+    bestTimeToVisit: "October to March",
+    activities: ["Shopping", "Food tours", "Cultural experiences"],
+    nearbyAttractions: [
+      "Victoria Memorial",
+      "Howrah Bridge",
+      "Dakshineswar Kali Temple",
+    ],
   },
 ];
 

@@ -1,9 +1,9 @@
-import Home from "./pages/Home";
-import Destinations from "./pages/Destinations";
-import DestinationDetails from "./pages/DestinationDetails"; // Import DestinationDetails
+import Home from "../src/pages/Home";
+import Destinations from "../src/pages/Destinations";
+import DestinationDetails from "../src/pages/DestinationDetails"; // Import DestinationDetails
 import Navbar from "../src/components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Authentication from "./pages/Authentication";
+import Authentication from "../src/pages/Authentication";
 
 const App = () => {
   return (
