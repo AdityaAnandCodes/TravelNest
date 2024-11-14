@@ -45,7 +45,7 @@ const Navbar = () => {
           <div className="text-white text-lg cursor-pointer">Things to do</div>
         </div>
       </div>
-      <div className="text-white text-lg cursor-pointer">Sign In</div>
+      <div className="text-white text-lg cursor-pointer" onClick={() => navigate("/authentication")}>Sign In</div>
     </nav>
   );
 };
