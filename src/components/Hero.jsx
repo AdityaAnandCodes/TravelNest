@@ -12,7 +12,7 @@ const Hero = () => {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
 
       {/* Centered Overlay Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-6">
