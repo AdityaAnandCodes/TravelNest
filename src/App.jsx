@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <main className="w-full min-h-screen">
+    <main className="w-full min-h-screen bg-neutral-100">
       <Router>
         <Navbar />
         <Routes>

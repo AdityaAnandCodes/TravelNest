@@ -6,6 +6,7 @@ import Testimonials from "../components/Testimonial";
 const Home = () => {
   return (
     <section className="w-full min-h-screen bg-neutral-100">
+            
       <Hero />
       <Testimonials />
       <Features />
