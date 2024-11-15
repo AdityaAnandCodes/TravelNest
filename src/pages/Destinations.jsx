@@ -1,62 +1,66 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import DestinationCard from "../components/DestinationCard";
 import destinationsData from "../constants/index";
 
 const Destinations = () => {
-  // State for managing search input, sort, and filter selections
+  const [filteredAndSortedDestinations, setFilteredAndSortedDestinations] =
+    useState(destinationsData);
   const [searchQuery, setSearchQuery] = useState("");
-  const [sortOption, setSortOption] = useState("name");
-  const [filterCategory, setFilterCategory] = useState("");
+  const [sortOption, setSortOption] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   // Function to handle search filter
-  const handleSearchChange = (event) => {
-    setSearchQuery(event.target.value);
-  };
+  const uniqueCategories = [
+    ...new Set(destinationsData.map((destination) => destination.category)),
+  ];
 
-  // Function to handle category filter
-  const handleFilterChange = (event) => {
-    setFilterCategory(event.target.value);
-  };
+  const filterAndSortDestinations = () => {
+    let destinations = [...destinationsData];
 
-  // Function to handle sorting
-  const handleSort = (option, destinations) => {
-    let sortedDestinations = [...destinations];
-
-    switch (option) {
-      case "temperature":
-        sortedDestinations.sort((a, b) => a.temperature - b.temperature);
-        break;
-      case "price-low-high":
-        sortedDestinations.sort((a, b) => a.price - b.price);
-        break;
-      case "price-high-low":
-        sortedDestinations.sort((a, b) => b.price - a.price);
-        break;
-      case "name":
-        sortedDestinations.sort((a, b) => a.name.localeCompare(b.name));
-        break;
-      default:
-        break;
+    // Filter by search
+    if (searchQuery) {
+      destinations = destinations.filter((destination) =>
+        destination.name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
     }
 
-    return sortedDestinations;
+    // Filter by category
+    if (selectedCategory) {
+      destinations = destinations.filter(
+        (destination) => destination.category === selectedCategory
+      );
+    }
+
+    // Sort logic
+    if (sortOption === "name") {
+      destinations.sort((a, b) => a.name.localeCompare(b.name));
+    } else if (sortOption === "priceLowHigh") {
+      destinations.sort(
+        (a, b) =>
+          parseFloat(a.price.replace("₹", "").replace(",", "")) -
+          parseFloat(b.price.replace("₹", "").replace(",", ""))
+      );
+    } else if (sortOption === "priceHighLow") {
+      destinations.sort(
+        (a, b) =>
+          parseFloat(b.price.replace("₹", "").replace(",", "")) -
+          parseFloat(a.price.replace("₹", "").replace(",", ""))
+      );
+    } else if (sortOption === "temperature") {
+      destinations.sort(
+        (a, b) =>
+          parseFloat(a.temperature.replace("°C", "")) -
+          parseFloat(b.temperature.replace("°C", ""))
+      );
+    }
+
+    setFilteredAndSortedDestinations(destinations);
   };
 
-  // Filter destinations based on search and category filters
-  const filteredDestinations = useMemo(() => {
-    return destinationsData.filter((destination) => {
-      return (
-        destination.name.toLowerCase().includes(searchQuery.toLowerCase()) &&
-        (filterCategory ? destination.category === filterCategory : true)
-      );
-    });
-  }, [searchQuery, filterCategory]);
-
-  // Sort the filtered destinations based on selected sort option
-  const sortedDestinations = useMemo(() => {
-    return handleSort(sortOption, filteredDestinations);
-  }, [sortOption, filteredDestinations]);
+  useEffect(() => {
+    filterAndSortDestinations();
+  }, [searchQuery, sortOption, selectedCategory]);
 
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -117,44 +121,52 @@ const Destinations = () => {
           </a>
         </div>
       </div>
-
-      {/* Search, Sort, and Filter Section */}
       <div className="p-8 pb-0">
-        <div className="flex flex-col sm:flex-row justify-between ">
-          {/* Search Input */}
-          <input
-            type="text"
-            placeholder="Search destinations"
-            value={searchQuery}
-            onChange={handleSearchChange}
-            className="px-4 py-2 border border-gray-300 rounded-lg w-full sm:w-1/3 mb-4 sm:mb-0"
-          />
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
+          {/* Search Bar */}
+          <div className="w-full sm:w-1/3">
+            <input
+              type="text"
+              placeholder="Search destinations"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
 
-          {/* Filter Category */}
-          <select
-            value={filterCategory}
-            onChange={handleFilterChange}
-            className="px-4 py-2 border border-gray-300 rounded-lg w-full sm:w-1/3 mb-4 sm:mb-0"
-          >
-            <option value="">All Categories</option>
-            <option value="Nature">Nature</option>
-            <option value="Entertainment">Entertainment</option>
-            <option value="Culture & History">Culture & History</option>
-            <option value="Shopping">Shopping</option>
-          </select>
+          {/* Filters and Sort */}
+          <div className="flex w-full sm:w-1/3 gap-4">
+            <select
+              value={selectedCategory}
+              onChange={(e) => setSelectedCategory(e.target.value)}
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="">All Categories</option>
+              {uniqueCategories.map((category, index) => (
+                <option value={category} key={index}>
+                  {category}
+                </option>
+              ))}
+            </select>
 
-          {/* Sort By */}
+            <select
+              value={sortOption}
+              onChange={(e) => setSortOption(e.target.value)}
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="name">Sort by Name</option>
+              <option value="priceLowHigh">Price: Low to High</option>
+              <option value="priceHighLow">Price: High to Low</option>
+              <option value="temperature">Temperature</option>
+            </select>
+          </div>
         </div>
       </div>
 
-      {/* Destination Cards Section */}
-      <div
-        id="destinations"
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6  p-8"
-      >
-        {sortedDestinations.map((destination, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-8">
+        {filteredAndSortedDestinations.map((destination, index) => (
           <Link
-            to={`/destinations/${destination.id}`} // Corrected the link structure
+            to={`/destinations/${destination.id}`}
             key={index}
             className="relative cursor-pointer"
           >

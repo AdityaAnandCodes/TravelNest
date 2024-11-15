@@ -147,10 +147,10 @@ export const testimonials = [
 
 const destinations = [
   {
-    id: "1", // Unique ID for each destination
+    id: "1",
     image: "/destinations/taj_mahal.jpg",
     name: "Taj Mahal",
-    price: "$15",
+    price: "₹1,200",
     description:
       "An iconic symbol of love and a UNESCO World Heritage Site in Agra. The Taj Mahal is a stunning white marble mausoleum built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal. It’s one of the Seven Wonders of the World.",
     category: "Culture & History",
@@ -160,10 +160,10 @@ const destinations = [
     nearbyAttractions: ["Agra Fort", "Mehtab Bagh", "Fatehpur Sikri"],
   },
   {
-    id: "2", // Unique ID for each destination
+    id: "2",
     image: "/destinations/kerala_backwaters.jpg",
     name: "Kerala Backwaters",
-    price: "$100",
+    price: "₹8,000",
     description:
       "A serene network of lagoons, rivers, and lakes along the Arabian Sea coast. Kerala’s backwaters offer a tranquil escape through traditional houseboats, providing a glimpse into the local way of life and beautiful landscapes.",
     category: "Nature",
@@ -173,10 +173,10 @@ const destinations = [
     nearbyAttractions: ["Alleppey", "Kumarakom", "Vembanad Lake"],
   },
   {
-    id: "3", // Unique ID for each destination
+    id: "3",
     image: "/destinations/goa.jpg",
     name: "Goa Beaches",
-    price: "$50",
+    price: "₹4,000",
     description:
       "Famous beaches in Goa for relaxation, water sports, and nightlife. Goa’s coastline is dotted with palm-fringed beaches offering everything from sunbathing to water sports, plus a vibrant nightlife scene with beach parties and bars.",
     category: "Entertainment",
@@ -190,10 +190,10 @@ const destinations = [
     ],
   },
   {
-    id: "4", // Unique ID for each destination
+    id: "4",
     image: "/destinations/jaipur.jpg",
     name: "Jaipur City Palace",
-    price: "$10",
+    price: "₹800",
     description:
       "A historic palace in the Pink City of Jaipur, showcasing Rajasthani architecture. The City Palace is a magnificent blend of Mughal and Rajput architecture, with stunning courtyards, museums, and opulent royal apartments.",
     category: "Culture & History",
@@ -203,10 +203,10 @@ const destinations = [
     nearbyAttractions: ["Amber Fort", "Hawa Mahal", "Jantar Mantar"],
   },
   {
-    id: "5", // Unique ID for each destination
+    id: "5",
     image: "/destinations/himalayas.jpg",
     name: "Himalayas",
-    price: "$300",
+    price: "₹24,000",
     description:
       "A stunning mountain range offering trekking and scenic beauty. The Himalayas stretch across five countries and provide breathtaking views, challenging treks, and opportunities for mountaineering, as well as spiritual journeys.",
     category: "Nature",
@@ -221,10 +221,10 @@ const destinations = [
     nearbyAttractions: ["Leh-Ladakh", "Nainital", "Spiti Valley"],
   },
   {
-    id: "6", // Unique ID for each destination
+    id: "6",
     image: "/destinations/delhi_markets.jpg",
     name: "Delhi Markets",
-    price: "$20",
+    price: "₹1,600",
     description:
       "A bustling hub of traditional and modern shopping experiences in Delhi. Markets like Chandni Chowk, Dilli Haat, and Connaught Place offer everything from street food and textiles to jewelry and crafts, providing an authentic shopping experience.",
     category: "Shopping",
@@ -234,10 +234,10 @@ const destinations = [
     nearbyAttractions: ["Qutub Minar", "India Gate", "Red Fort"],
   },
   {
-    id: "7", // Unique ID for each destination
+    id: "7",
     image: "/destinations/mysore_palace.jpg",
     name: "Mysore Palace",
-    price: "$5",
+    price: "₹400",
     description:
       "A grand palace known for its architectural beauty and rich history. Mysore Palace is one of India’s most famous royal residences, showcasing Indo-Saracenic architecture, intricate woodwork, and historical artifacts.",
     category: "Culture & History",
@@ -251,10 +251,10 @@ const destinations = [
     ],
   },
   {
-    id: "8", // Unique ID for each destination
+    id: "8",
     image: "/destinations/rishikesh.jpg",
     name: "Rishikesh",
-    price: "$60",
+    price: "₹4,800",
     description:
       'The "Yoga Capital of the World" with scenic landscapes and river rafting. Known for its spiritual significance, Rishikesh attracts visitors seeking peace, yoga retreats, and adventure activities like white-water rafting.',
     category: "Nature",
@@ -268,10 +268,10 @@ const destinations = [
     ],
   },
   {
-    id: "9", // Unique ID for each destination
+    id: "9",
     image: "/destinations/mumbai.jpg",
     name: "Mumbai Nightlife",
-    price: "$80",
+    price: "₹6,400",
     description:
       "A vibrant nightlife scene with clubs, restaurants, and entertainment. Mumbai is famous for its bustling nightlife with iconic clubs, restaurants, and bars, making it one of India’s best destinations for night owls.",
     category: "Entertainment",
@@ -281,10 +281,10 @@ const destinations = [
     nearbyAttractions: ["Gateway of India", "Marine Drive", "Elephanta Caves"],
   },
   {
-    id: "10", // Unique ID for each destination
+    id: "10",
     image: "/destinations/kolkata.jpg",
     name: "Kolkata Bazaars",
-    price: "$15",
+    price: "₹1,200",
     description:
       "Traditional markets known for handicrafts, textiles, and sweets. Kolkata’s bazaars like New Market and Gariahat are famous for their vibrant atmosphere and a wide range of goods, including Bengali handicrafts and sweets.",
     category: "Shopping",
