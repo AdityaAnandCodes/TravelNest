@@ -60,9 +60,9 @@ const Error404Page = () => {
   return (
     <section className="min-h-screen w-full bg-gray-950 flex justify-center items-center">
       {/* Main container with horizontal layout */}
-      <div className="w-full h-full flex max-sm:flex-col items-center justify-center">
+      <div className="w-full h-full flex flex-col xl:flex-row items-center justify-center">
         {/* Canvas for 3D model */}
-        <div className="w-[50vw] h-[90vh] max-sm:w-full max-sm:h-[60vh]">
+        <div className="xl:w-[50vw] xl:h-[90vh] w-full  max-sm:h-[60vh]">
           <Canvas className="w-full h-full" camera={{ position: [0, 0, 50], fov: 50 }}>
             <ambientLight intensity={1} />
             
@@ -83,7 +83,7 @@ const Error404Page = () => {
         </div>
 
         {/* Content section on the right */}
-        <div className="text-center text-white w-[40vw] max-sm:w-full max-sm:px-4 max-sm:pb-10">
+        <div className="text-center text-white w-[40vw] max-sm:w-full xl:px-0  px-4 pb-10">
           <h1 className="text-4xl font-semibold mb-4">Oops! Page Not Found</h1>
           <p className="mb-6 text-lg">
             The page you are looking for doesn't exist. It seems like you've reached a broken link.

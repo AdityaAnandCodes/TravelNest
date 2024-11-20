@@ -17,16 +17,19 @@ const Hero = () => {
         loop
         muted
         playsInline
+        controls="false"
+  style={{
+    pointerEvents: 'none', // Disable all interactions
+    display: 'block',      // Ensure no inline elements affect rendering
+  }}
       />
       
 
       {/* Dark Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
-      <div className="absolute bottom-5 left-0 transform -translate-x-1/2 animate-bounce px-10">
+      <div className="absolute bottom-5 left-0 transform -translate-x-1/2 animate-bounce px-10 max-sm:px-4">
           <a href="#testimonials">
-            <svg
-              width="56px"
-              height="56px"
+            <svg className='max-sm:w-8 max-sm:h-8 w-[56px] h-[56px]'
               viewBox="-2.88 -2.88 37.76 37.76"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
