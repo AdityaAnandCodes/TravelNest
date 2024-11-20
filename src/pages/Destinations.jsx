@@ -74,11 +74,10 @@ const Destinations = () => {
             Explore Destinations
           </h1>
         </div>
-        <div className="absolute bottom-5 left-3/9 transform -translate-x-1/2 animate-bounce px-10">
+        <div className="absolute bottom-5 left-3/9 transform -translate-x-1/2 animate-bounce px-10 max-sm:px-5">
           <a href="#destinations">
-            <svg
-              width="56px"
-              height="56px"
+            <svg className="w-[56px] h-[56px] max-sm:w-[44px] max-sm:h-[44px]"
+              
               viewBox="-2.88 -2.88 37.76 37.76"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
