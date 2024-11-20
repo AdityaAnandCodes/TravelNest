@@ -1,3 +1,6 @@
+// Footer.jsx
+import { Link } from "react-router-dom"; // Import Link for routing
+
 const Footer = () => {
   return (
     <footer className="w-full py-12 bg-gray-900 text-white">
@@ -15,10 +18,10 @@ const Footer = () => {
         <div className="mb-6 lg:mb-0">
           <h3 className="text-lg font-semibold mb-4 text-gray-300">Quick Links</h3>
           <ul className="space-y-3">
-            <li><a href="/destinations" className="hover:text-rose-600 transition-colors">Destinations</a></li>
-            <li><a href="/about" className="hover:text-rose-600 transition-colors">About Us</a></li>
-            <li><a href="/blog" className="hover:text-rose-600 transition-colors">Blog</a></li>
-            <li><a href="/contact" className="hover:text-rose-600 transition-colors">Contact</a></li>
+            <li><Link to="/destinations" className="hover:text-rose-600 transition-colors">Destinations</Link></li>
+            <li><Link to="/error404" className="hover:text-rose-600 transition-colors">About Us</Link></li>
+            <li><Link to="/error404" className="hover:text-rose-600 transition-colors">Blog</Link></li>
+            <li><Link to="/error404" className="hover:text-rose-600 transition-colors">Contact</Link></li>
           </ul>
         </div>
         
@@ -36,10 +39,10 @@ const Footer = () => {
         <div className="mb-6 lg:mb-0">
           <h3 className="text-lg font-semibold mb-4 text-gray-300">Follow Us</h3>
           <ul className="flex space-x-6">
-            <li><a href="#" aria-label="Facebook" className="hover:text-rose-600 transition-colors">Facebook</a></li>
-            <li><a href="#" aria-label="Instagram" className="hover:text-rose-600 transition-colors">Instagram</a></li>
-            <li><a href="#" aria-label="Twitter" className="hover:text-rose-600 transition-colors">Twitter</a></li>
-            <li><a href="#" aria-label="LinkedIn" className="hover:text-rose-600 transition-colors">LinkedIn</a></li>
+            <li><Link to="/error404" aria-label="Facebook" className="hover:text-rose-600 transition-colors">Facebook</Link></li>
+            <li><Link to="/error404" aria-label="Instagram" className="hover:text-rose-600 transition-colors">Instagram</Link></li>
+            <li><Link to="/error404" aria-label="Twitter" className="hover:text-rose-600 transition-colors">Twitter</Link></li>
+            <li><Link to="/error404" aria-label="LinkedIn" className="hover:text-rose-600 transition-colors">LinkedIn</Link></li>
           </ul>
         </div>
       </div>

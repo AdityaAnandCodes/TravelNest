@@ -163,7 +163,7 @@ const Destinations = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-8">
+      <div id="destinations" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-8">
         {filteredAndSortedDestinations.map((destination, index) => (
           <Link
             to={`/destinations/${destination.id}`}

@@ -24,7 +24,7 @@ const Testimonials = () => {
   });
 
   return (
-    <section className="testimonials px-5 p-10">
+    <section id='testimonials' className="testimonials px-5 p-10">
       <div className="text-3xl font-bold mb-6 text-center text-gray-800">What Our Travelers Say</div>
       <div className="flex gap-10 justify-start p-6 testsec">
         {testimonials.map((testimonial, index) => (

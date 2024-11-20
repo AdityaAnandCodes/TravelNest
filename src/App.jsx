@@ -6,6 +6,7 @@ import DestinationDetails from "../src/pages/DestinationDetails"; // Import Dest
 import Navbar from "../src/components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Authentication from "../src/pages/Authentication";
+import Error404Page from "./pages/Error404Page";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
             element={<DestinationDetails />}
           ></Route>
           <Route path="/authentication" element={<Authentication />}></Route>
+          <Route path='/error404' element={<Error404Page />}></Route>
         </Routes>
       </Router>
     </main>
