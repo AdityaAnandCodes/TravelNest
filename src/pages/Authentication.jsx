@@ -1,14 +1,21 @@
-import  { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for page redirection
 
 const Authentication = () => {
   const [isLogin, setIsLogin] = useState(true); // Track whether to show login or signup
   const formRef = useRef(null); // Reference to the form container
   const circlesRef = useRef([]); // Reference to store circles for animation
+  const navigate = useNavigate(); // Get the navigate function
 
   // Toggle between login and signup
   const toggleForm = () => {
     setIsLogin(!isLogin);
+  };
+
+  const handleLoginSubmit = (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
+    navigate("/error404"); // Navigate to the 404 error page
   };
 
   useEffect(() => {
@@ -62,7 +69,7 @@ const Authentication = () => {
 
           {/* Login or Signup form */}
           {isLogin ? (
-            <form>
+            <form onSubmit={handleLoginSubmit}> {/* Add the onSubmit handler */}
               <div className="mb-4">
                 <label className="block text-sm font-medium text-gray-700" htmlFor="email">
                   Email
