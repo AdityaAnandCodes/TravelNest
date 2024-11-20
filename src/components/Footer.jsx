@@ -38,7 +38,7 @@ const Footer = () => {
         {/* Social Media Links */}
         <div className="mb-6 lg:mb-0">
           <h3 className="text-lg font-semibold mb-4 text-gray-300">Follow Us</h3>
-          <ul className="flex space-x-6">
+          <ul className="flex space-x-6 max-sm:space-x-0 max-sm:text-md max-sm:flex-col max-sm:gap-1">
             <li><Link to="/error404" aria-label="Facebook" className="hover:text-rose-600 transition-colors">Facebook</Link></li>
             <li><Link to="/error404" aria-label="Instagram" className="hover:text-rose-600 transition-colors">Instagram</Link></li>
             <li><Link to="/error404" aria-label="Twitter" className="hover:text-rose-600 transition-colors">Twitter</Link></li>
