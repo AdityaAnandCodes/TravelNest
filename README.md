@@ -67,8 +67,8 @@ The design incorporates smooth animations, interactive 3D elements, and a respon
 
 ## 📷 Videos
 
-![TravelNest Video 1](./showcase/TravelNest%20-%20Google%20Chrome%202024-11-21%2021-46-54.mp4)
-![TravelNest Video 2](./showcase/TravelNest%20-%20Google%20Chrome%202024-11-21%2021-47-19.mp4)
+![TravelNest Video 1](./showcase/landing.gif)
+![TravelNest Video 2](./showcase/destinations.gif)
 
 ## 📄 License
 
