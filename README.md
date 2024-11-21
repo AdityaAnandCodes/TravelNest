@@ -40,7 +40,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/travel-nest.git
+   git clone https://github.com/AdityaAnandCodes/TravelNest.git
    ```
 
 ## 🖥️ How to Run Locally
@@ -49,7 +49,7 @@ To run this project locally, follow these steps:
 
 2. Navigate to the project folder:
    ```bash
-   cd travel-nest
+   cd TravelNest
    ```
 3. Install dependencies:
    ```bash
