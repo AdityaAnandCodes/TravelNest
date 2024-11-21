@@ -66,9 +66,17 @@ To run this project locally, follow these steps:
 The design incorporates smooth animations, interactive 3D elements, and a responsive layout to ensure an engaging user experience. GSAP and React Three Fiber are utilized to create interactive animations and 3D effects.
 
 ## 📷 Videos
+<img src="./showcase/landing.gif" alt="TravelNest Video 1" width="900">
 
-![TravelNest Video 1](./showcase/landing.gif)
-![TravelNest Video 2](./showcase/destinations.gif)
+<br>
+<br>
+<br>
+
+<img src="./showcase/destinations.gif" alt="TravelNest Video 2" width="900">
+
+
+
+
 
 ## 📄 License
 
